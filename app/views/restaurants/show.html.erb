@@ -1,0 +1,10 @@
+<h1><%= @restaurant.name %></h1>
+
+<p>Address: <%= @restaurant.address %></p>
+<p>Make a reservation at: <%= @restaurant.phone_number %></p>
+<p>Culinary style: <%= @restaurant.category %></p>
+
+<%= link_to 'check all reviews', restaurant_reviews_path(@restaurant), class: 'btn btn-primary' %>
+<%= link_to 'Delete the restaurant', restaurant_path, method: 'delete', class: 'btn btn-danger' %>
+<%= link_to 'Edit the info', edit_restaurant_path, class: 'btn btn-light' %>
+<%= link_to 'See all restaurants', restaurants_path, class: 'btn btn-dark' %>

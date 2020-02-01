@@ -1,0 +1,9 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <div class="form-group">
+    <%= f.input :content, class: 'form-control' %>
+    <%= f.input :ratings, class: 'form-control' %>
+  </div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Go back to reviews', restaurant_reviews_path %>
